@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lab6.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--<TextView-->
+    <!--android:id="@+id/cityList"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Select the list of Cities"-->
+    <!--tools:layout_editor_absoluteX="133dp"-->
+    <!--tools:layout_editor_absoluteY="76dp" />-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/Denver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Denver, US" />
+
+        <CheckBox
+            android:id="@+id/Vegas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Las Vegas, US" />
+
+        <CheckBox
+            android:id="@+id/Paris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Paris, FR" />
+
+        <CheckBox
+            android:id="@+id/Tucson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Tucson, US" />
+
+        <CheckBox
+            android:id="@+id/LA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Los Angeles, US" />
+
+        <CheckBox
+            android:id="@+id/Chennai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Chennai, IN" />
+
+        <CheckBox
+            android:id="@+id/SD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="San Diego, US" />
+
+        <CheckBox
+            android:id="@+id/Delhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="New Delhi, IN" />
+
+        <CheckBox
+            android:id="@+id/NY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="New York, US" />
+
+        <CheckBox
+            android:id="@+id/Sydney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Sydney, AU" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selectedCities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="9dp"
+        android:text="Change"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/showWeather" />
+
+    <Button
+        android:id="@+id/showWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedCities"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:text="Show Weather"
+        app:layout_constraintBaseline_toBaselineOf="@+id/selectedCities"
+        app:layout_constraintEnd_toStartOf="@+id/selectedCities"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<WebView-->
+        <!--android:id="@+id/webView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+</android.support.constraint.ConstraintLayout>

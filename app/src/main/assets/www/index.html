@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <style type="text/css">
+      table,th,td {
+      border : 1px solid black;
+      border-collapse: collapse;
+      }
+     th,td {
+     padding: 5px;
+    }
+   </style>
+    <script src="app1.js" type="text/javascript"> </script>
+</head>
+<body onload="loadTable()">
+<div id="errorCode1">
+    <p id="errorCode"></p>
+</div>
+<div id="tableContainer">
+    <table id="tableId">
+        <tr>
+            <th> City Name </th>
+            <th> Time Stamp
+                (yyyy:mm:dd:hh:mm:ss) </th>
+            <th> Temperature in Celcius</th>
+            <th> Humidity in % </th>
+            <th> Wind Speed in miles per hour </th>
+            <th> Cloudiness in % </th>
+        </tr>
+    </table>
+</div>
+<div id="thirdcity">
+    <label>Please Select the third City:</label>
+    <select onchange="thirdRow()" id="selectTag">
+        <option id="defaultOption" value="" disabled selected>Select the third city</option>
+        <!--<option id="delhi" value="New Delhi,IN">Delhi</option>-->
+        <!--<option id="sydney" value="Sydney,AU">Sydney</option>-->
+        <!--<option id="ny" value="New York,US">New York</option>-->
+    </select>
+    </br>
+    <input type="button" value="Refresh" onclick="refresh()">
+</div>
+<div>
+    <p id="p1">The average temperature is <span id="avgTemp"> </span> and the hottest city is <span id="hotCity"></span></p>
+    <p id="p2">The average humidity is <span id="avgHumid"> </span> and the most humid city is <span id="humidCity"></span></p>
+    <p id="p3">The City with the nicest weather is <span id="niceWeather"> </span> </p>
+    <p id="p4">The City with the worst weather is <span id="worstWeather"> </span> </p>
+</div>
+</body>
+</html>
+
